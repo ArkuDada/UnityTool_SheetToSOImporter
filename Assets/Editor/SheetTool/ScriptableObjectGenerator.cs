@@ -5,7 +5,8 @@ namespace Editor.SheetTool
 {
     public static class ScriptableObjectGenerator
     {
-        public static void CreateAssets(object data)
+        private static string savePath = "Assets/Resources/SheetRowAssets";
+        public static void CreateAssets(object data,string path)
         {
             SheetData sheetData = data as SheetData;
             if (sheetData == null)
@@ -14,6 +15,7 @@ namespace Editor.SheetTool
                 return;
             }
             
+            savePath = path;
             foreach (var row in sheetData.Rows)
             {
                 CreateScriptableObject(row);
@@ -22,7 +24,7 @@ namespace Editor.SheetTool
 
         private static void CreateScriptableObject(SheetRow row)
         {
-            var assetPath = $"Assets/Resources/SheetRowAssets/{row.Name}.asset";
+            var assetPath = $"{savePath}/{row.Name}.asset";
             var existingAsset = AssetDatabase.LoadAssetAtPath<SheetRowAsset>(assetPath);
             
             SheetRowAsset asset;

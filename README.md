@@ -24,10 +24,6 @@ While the tool is functional, it has some limitations that affect its flexibilit
     - The tool lacks comprehensive error handling for scenarios like invalid JSON, network failures, or missing class definitions.
     - Mitigation: Add detailed error messages and fallback mechanisms to improve user experience.
 
-4. **Asset Management**:
-    - Assets are always created or updated in the `Resources` folder, which may not suit all project structures.
-    - Mitigation: Allow users to configure the asset output path dynamically.
-
 ## Links
 - **Sample Google Sheet**: [Google Sheet Example](https://docs.google.com/spreadsheets/d/1ZRwI8qC9ys3IDbUTwOaZEza7AeRtIvdqoqCI5XVK05Q/edit?usp=sharing)
 - **Google Apps Script (JSON Endpoint)**: [JSON Endpoint](https://script.google.com/macros/s/AKfycbxO5E-gJJGV2nc39mUbeZS_-qoZsCm833Dd_c2c_UpHOIj7gEAnRA4yZGa0ao_AxgA/exec)
