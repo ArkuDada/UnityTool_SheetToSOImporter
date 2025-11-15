@@ -24,6 +24,15 @@ While the tool is functional, it has some limitations that affect its flexibilit
     - The tool lacks comprehensive error handling for scenarios like invalid JSON, network failures, or missing class definitions.
     - Mitigation: Add detailed error messages and fallback mechanisms to improve user experience.
 
+## Use Guide
+
+### Instructions:
+1. Open the tool by navigating to **Tools -> Sheet Importer** in the Unity Editor.
+2. Place the link to the JSON endpoint in the provided field (example link provided below).
+3. Select the class to serialize the data into (e.g., `SheetData`).
+4. Pick the path where the assets will be saved.
+5. Press the **Fetch & Generate** button to fetch the data and generate the assets.
+
 ## Links
 - **Sample Google Sheet**: [Google Sheet Example](https://docs.google.com/spreadsheets/d/1ZRwI8qC9ys3IDbUTwOaZEza7AeRtIvdqoqCI5XVK05Q/edit?usp=sharing)
 - **Google Apps Script (JSON Endpoint)**: [JSON Endpoint](https://script.google.com/macros/s/AKfycbxO5E-gJJGV2nc39mUbeZS_-qoZsCm833Dd_c2c_UpHOIj7gEAnRA4yZGa0ao_AxgA/exec)
