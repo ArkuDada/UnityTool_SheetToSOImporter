@@ -16,7 +16,7 @@ namespace Editor.SheetTool
         public string Name;
 
         [JsonProperty]
-        public int HP;
+        public int Hp;
 
         [JsonProperty]
         public int Attack;

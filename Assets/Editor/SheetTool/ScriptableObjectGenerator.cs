@@ -39,8 +39,9 @@ namespace Editor.SheetTool
                 Debug.Log($"Creating new asset: {row.Name}");
             }
             
+            
             asset.Name = row.Name;
-            asset.HP = row.HP;
+            asset.HP = row.Hp;
             asset.Attack = row.Attack;
             asset.Defense = row.Defense;
             
